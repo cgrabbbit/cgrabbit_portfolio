@@ -20,12 +20,21 @@
 }
 
 #header_list a {
+
+    /* background-color: red; */
+
+    display: flex;
+    color: #0D0402;
     text-decoration: none;
-    padding: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0.5rem;
     border: solid 1px transparent;
     border-radius: 2rem;
-}
-
-#header_list a:hover{
-    border: solid 2px red;
+    font-family: Mooli; 
+    margin-top: auto;
+    align-items: flex-end;
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 5px;
+    background: linear-gradient(var(--secondary-color), var(--main-color));
 }
