@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 2000px; 
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 1rem 1rem 1rem 1rem;
+
+    /* background image */
+    background-image: url("../images/berries.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    --alignment: center;
+    --flex-alignment: center;
+    --indent-left: 1;
+    --indent-right: 1;
+    --border-radius-tl: 0.5rem;
+    --border-radius-tr: 0.5rem;
+    --border-radius-br: 0.5rem;
+    --border-radius-bl: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    text-align: var(--alignment);
+    z-index: 1;
+    background-color: #00EEFF;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    transition: opacity 0.875s ease 0.25s,transform 0.875s ease 0.25s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.inner {
+    --padding-horizontal: 1.625rem;
+    --padding-vertical: 2rem;
+    --spacing: 0.875rem;
+    --width: 40rem;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    max-width: 100%;
+    position: relative;
+    width: var(--width);
+    z-index: 1;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+}
+
+#header {
+    margin-bottom: var(--spacing);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    margin-bottom: 0rem !important;
+}

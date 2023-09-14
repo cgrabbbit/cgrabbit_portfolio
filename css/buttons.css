@@ -1,0 +1,31 @@
+.buttons {
+    cursor: default;
+    display: flex;
+    justify-content: var(--flex-alignment);
+    letter-spacing: 0;
+    padding: 0;
+}
+
+#header_list {
+    gap: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    cursor: default;
+    display: flex;
+    justify-content: var(--flex-alignment);
+    letter-spacing: 0;
+    padding: 0;
+    gap: 3rem;
+}
+
+#header_list a {
+    text-decoration: none;
+    padding: 1rem;
+    border: solid 1px transparent;
+    border-radius: 2rem;
+}
+
+#header_list a:hover{
+    border: solid 2px red;
+}
