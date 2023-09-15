@@ -9,8 +9,6 @@ html, body {
     --background_color: #FAA307;
     --foreground_color: #6b6e80;
     --header_color: #f1f1f7;
-    --main_color: #fff;
-    --border-radius: 20px;
 }
 
 ol, ul {
@@ -23,47 +21,12 @@ ol, ul {
     align-items: center;
 }
 
-#background {
-    background: linear-gradient(20deg, #73bf66 85%, #a3e147);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-#background_front {
-    background-color: var(--foreground_color);
-    height: calc(100% - var(--background_front_offset));
-    position: relative;
-    top: var(--background_front_offset);
-    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    justify-content: center;
-    z-index: 2;
-}
-
-.main {
-    background-color: var(--main_color);
-    position: relative;
-    width: 70vh;
-    z-index: 2;
-    margin: 10% 10% 10% 10%;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-}
-
 #header {
     background-color: var(--header_color);
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 #header a {
@@ -75,7 +38,6 @@ ol, ul {
 }
 
 #header li {
-    /* margin: 50px; */
     white-space: nowrap;
     margin: 10px 35px 10px 35px;
 }
@@ -90,9 +52,8 @@ ol, ul {
     color: #000;
     font-family: 'Mooli', sans-serif;
     font-size: 20px;
-    margin: 70px 100px 70px 100px;
-
     text-align: justify;
+    margin: 70px 100px 70px 100px;
 }
 
 .divider_img {
@@ -105,6 +66,13 @@ ol, ul {
 }
 
 @media screen and (max-width: 770px){
+    #header {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #header a {
         font-size: 15px;
     }
@@ -116,8 +84,12 @@ ol, ul {
     }
 
     .sample_text {
-        font-size: 8px;
-        margin: 7px 10px 7px 10px;
+        font-size: 16px;
+        margin: 10px 20px 10px 20px;
+    }
+
+    .divider_img {
+        height: 5rem;
     }
     
 }
