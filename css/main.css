@@ -106,7 +106,7 @@ html, body {
 }
 
 .divider_img {
-    background-image: url(../images/background.png);
+    background-image: url(../images/content/donuts_test01.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -125,12 +125,13 @@ html, body {
     #logo_container a {
         position: relative;
         bottom: 2px;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 0px;
     }
 
     #logo_container img {
         width: 50px;
         height: 50px;
+        margin: 0 0 0 20px;
     }
 
     /* Hide desktop nav bar */
