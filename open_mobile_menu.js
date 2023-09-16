@@ -4,17 +4,17 @@ const menu = document.getElementById("menu_icon")
 
 
 // set initial position in css
-sideNav.style.right = "-250px";
+sideNav.style.top = "-300px";
 
 menuBtn.onclick = function(){
-    if(sideNav.style.right == "-250px"){
-        sideNav.style.right = "0";
+    if(sideNav.style.top == "-300px"){
+        sideNav.style.top = "0";
         menu.src = "images/close.png";
-        menuBtn.style.rotate = "180deg y"
+        menuBtn.style.rotate = "180deg x"
     }
     else{
-        sideNav.style.right = "-250px"
+        sideNav.style.top = "-300px"
         menu.src = "images/menu.png";
-        menuBtn.style.rotate = "0deg y"
+        menuBtn.style.rotate = "0deg x"
     }
 }

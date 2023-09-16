@@ -7,13 +7,16 @@ html, body {
 /* Header section */
 
 #header {
-    position: relative;
-    background: linear-gradient(45deg, #99D98C, #52B69A, #34A0A4 90%);
+    position: fixed;
+    /* background: linear-gradient(45deg, #99D98C, #52B69A, #34A0A4 90%); */
+    background-color: #34A0A4;
+    width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     justify-content: space-between;
+    z-index: 5;
 }
 
 #logo_container a {
@@ -69,6 +72,8 @@ html, body {
 }
 
 #main_content {
+    position: relative;
+    top: 50px;
     background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -126,12 +131,12 @@ html, body {
         padding: 0;
         margin: 0;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
     }
 
     #mobile_menu .navigation_list li {
         white-space: nowrap;
-        margin: 10px 20px 10px 0px;
+        margin: 10px 0px 10px 0px;
     }
 
     .nav_button {
@@ -142,7 +147,7 @@ html, body {
     }
 
     #mobile_burger_menu {
-        rotate: 0;
+        rotate: 0deg x;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -164,13 +169,14 @@ html, body {
 
     #mobile_menu {
         display: block;
-        width: 200px;
-        height: 100vh;
+        width: 100%;
+        height: 300px;
         position: fixed;
-        right: -250px;
+        top: -250px;
         top: 0;
-        background: linear-gradient(#343a40, #6c757d);
-        z-index: 2;
+        /* background: linear-gradient(#343a40, #6c757d); */
+        background: linear-gradient(45deg, #34a49b, #34A0A4);
+        z-index: 0;
         transition: 0.33s;
     }
 

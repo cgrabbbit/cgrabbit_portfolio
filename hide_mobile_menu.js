@@ -1,10 +1,7 @@
 const header  = document.getElementById("header");
 
-const headerHeight = header.offsetHeight;
-
 window.addEventListener('scroll', () => {
-    if(window.scrollY > headerHeight) {
-        sideNav.style.right = "-250px";
+        sideNav.style.top = "-300px";
         menu.src = "images/menu.png";
-    }
+        menuBtn.style.rotate = "0deg x"
 });
