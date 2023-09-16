@@ -5,13 +5,9 @@ html, body {
 }
 
 /* 
-#34A0A4
-#52B69A
-#99D98C
-
-#ffaa00
-#ffb700
-#ffc300
+#67b99a
+#469d89
+#248277
 
 */
 
@@ -20,7 +16,7 @@ html, body {
 #header {
     position: fixed;
     /* background: linear-gradient(45deg, #99D98C, #52B69A, #34A0A4 90%); */
-    background-color: #ffaa00;
+    background-color: #469d89;
     width: 100%;
     height: 50px;
     display: flex;
@@ -186,7 +182,7 @@ html, body {
         top: -250px;
         top: 0;
         /* background: linear-gradient(#343a40, #6c757d); */
-        background: linear-gradient(45deg, #ff9500, #ffa200);
+        background: linear-gradient(45deg, #67b99a, #248277);
         z-index: 0;
         transition: 0.33s;
     }
