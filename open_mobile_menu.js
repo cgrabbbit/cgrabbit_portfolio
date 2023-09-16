@@ -1,6 +1,6 @@
-var menuBtn = document.getElementById("mobile_burger_menu")
-var sideNav = document.getElementById("mobile_menu")
-var menu = document.getElementById("menu_icon")
+const menuBtn = document.getElementById("mobile_burger_menu")
+const sideNav = document.getElementById("mobile_menu")
+const menu = document.getElementById("menu_icon")
 
 
 // set initial position in css
